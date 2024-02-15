@@ -139,7 +139,7 @@ function App() {
                             </Col>
                             <Col lg={6}>
                                 <div className="h-100 d-flex justify-content-center p-2">
-                                    <img className="img-fluid rounded" src="/profile.jpg" alt="profile picture" />
+                                    <img className="img-fluid rounded" src="./profile.jpg" alt="profile picture" />
                                 </div>
                             </Col>
                         </Row>
