@@ -1,5 +1,6 @@
 {
   "name": "personal-site",
+  "homepage": "https://mfisli.github.io/persona-site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@types/jest": "^29.5.10",
     "eslint": "^8.55.0",
+    "gh-pages": "^6.1.1",
     "prettier": "3.1.0",
     "sass": "^1.69.5"
   },
@@ -32,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

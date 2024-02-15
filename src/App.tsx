@@ -187,10 +187,10 @@ function App() {
                 <Container>
                     <h2>Contact</h2>
                     <div className="d-flex justify-content-center mb-3">
-                        <a href="https://github.com/mfisli">
+                        <a href="https://github.com/mfisli" target='_blank'>
                             <FontAwesomeIcon icon={faGithub} />GitHub
                         </a>
-                        <a href="https://www.linkedin.com/in/maks-fisli">
+                        <a href="https://www.linkedin.com/in/maks-fisli" target='_blank'>
                             <FontAwesomeIcon icon={faLinkedin} />
                             LinkedIn
                         </a>
