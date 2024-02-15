@@ -1,0 +1,105 @@
+@import '~bootstrap/scss/bootstrap';
+
+.masthead {
+    // height: 80vh;
+
+}
+
+.navbar {
+    transition: 500ms;
+}
+
+.nav-after-scroll {
+    background: white
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.375);
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.text-massive {
+    font-size: 4em;
+}
+
+.overlay {
+    width: 100%;
+    // max-width: 1140px;
+    // max-height: 640px;
+    padding: 8rem 6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.375);
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+
+  @media only screen and (max-width: 992px) {
+    .overlay {
+      padding: 1rem;
+    }
+  }
+
+  .masthead-text-container {
+    max-width: 36rem;
+  }
+
+$white: #fff;
+$blue: #1e90ff;
+$green: #39d24a;
+$yellow: #ffe244;
+$pink: #ff36a3;
+
+body {
+//   height: 100vh;
+//   overflow: hidden;
+  
+  // I do like these colours
+  /* background: 
+    radial-gradient(circle at bottom, #fff -30%, transparent 70%),
+    linear-gradient(to right, #134a8e, #00b6f1 50%),
+    #fff; */
+  
+  background: 
+    radial-gradient(circle at bottom, $white, transparent 80%),    
+    linear-gradient(to top, dodgerblue 0%, transparent 70%),    
+    linear-gradient(to bottom, transparent, rgba($white, 0.4) 70%),
+    $blue;  
+  animation: bg 60s infinite;
+}
+
+@keyframes bg {
+  0%, 100% { background-color: $blue; }
+  25% { background-color: $green; }
+  50% { background-color: $yellow; }
+  75% { background-color: $pink; }
+}
+
+.svg-inline--fa {
+  font-size: 4rem;
+  display: block;
+  padding: 1rem 2rem;
+  color: $blue;
+  transition: all 200ms ease-out;
+
+  &:hover {
+    color: $pink;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+
+  .svg-inline--fa {
+  font-size: 2rem;
+
+  }
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}
